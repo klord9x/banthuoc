@@ -24,7 +24,8 @@
         <ul>
         <li><font color="#0099FF"><?php echo $dsp['Tensanpham'];?></font></li>
         <li><font color="#CC0000">Giá</font>: <?php echo number_format( $dsp['Gia']);?> VNĐ</li>
-        <li><img src="images/cart_1.jpg" width="20" height="17" /><a href="addcart.php?item=<?php echo $dsp['idsanpham']; ?>">Đặt hàng</a></li>
+        <li><img src="images/cart_1.jpg" width="20" height="17" /><a href="addcart.php?item=<?php echo $dsp['idsanpham']; ?>" id ="dathang" item = "<?php echo $dsp['idsanpham']; ?>">Đặt hàng</a></li>
+        <!-- TODO submit form to addcart and redirect to cart. -->
       
  
         </ul>
@@ -47,3 +48,29 @@
     
     </div>
 </div><!--end chitiet-->
+
+<!-- javascript -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#dathang").click(function(){
+        event.preventDefault();
+        // console.log('this', $(this).attr('item'));
+        $.post("addcart.php",
+        {
+            item: $(this).attr('item'),
+            sl: 1
+        },
+        function(data, status){
+            if(status === "success"){
+                // alert("Giỏ hàng đã được cập nhật thành công");
+                // alert(data);
+                $.get("cart.php");
+                var data = $.parseJSON(data);
+                $("#cart_sl").html(Object.keys(data.cart).length+" món hàng");
+                // console.log(Object.keys(data.cart).length);
+
+            }
+        });
+    });
+  });
+</script>

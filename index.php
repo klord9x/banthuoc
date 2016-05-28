@@ -6,7 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link a href="Style/index.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
 <title>CHĂM SÓC SỨC KHỎE ONLINE </title>
 </head>
 
@@ -58,7 +59,7 @@ $ok=1;
   echo '<p>Chưa có hàng trong giỏ</p>';
  } else {
   $items = $_SESSION['cart'];
-  echo '<p>Đang có <a href="?go=dathang">'.count($items).' món hàng</a> trong giỏ</p>';
+  echo '<p>Đang có <a href="?go=dathang" id="cart_sl">'.count($items).' món hàng</a> trong giỏ</p>';
 
  }
 }

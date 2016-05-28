@@ -1,7 +1,10 @@
 ﻿
 <?php
 session_start();
-$id=$_GET['item'];
+// var_dump($_POST);
+// die('POST');
+$id=$_POST['item'];
+$sl=$_POST['sl'];
 if (isset($_SESSION['User']) && $_SESSION['User'])
 {
 if(isset($_SESSION['cart'][$id]))
@@ -13,7 +16,8 @@ else
  $qty=1;
 }
 $_SESSION['cart'][$id]=$qty;
-header("location:cart.php");
+echo json_encode($_SESSION);
+// header("location:cart.php");
 }
 else
 {
