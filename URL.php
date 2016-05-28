@@ -1,0 +1,13 @@
+﻿<?php
+             switch($_GET['go'])
+			    {
+					case"danhmucsanpham":
+					include("danhmucsanpham.php");
+					break;
+					case"gioithieu":
+					include("Gioithieu.php");
+					break;
+					default:
+					include("danhmucsanpham.php");
+				}
+?>

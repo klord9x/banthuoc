@@ -1,0 +1,77 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+
+#banner {
+	background-color: #999;
+	height: 100px;
+	width: 100%;
+	margin-bottom:10px;
+}
+#menu {
+	background-color: #CCC;
+	height: auto;
+	width: 12%;
+	float: left;
+}
+#content {
+	background-color: #FFC;
+	float: right;
+	height: auto;
+	width: 87%;
+}
+#footer {
+	background-color: #CCC;
+	height: 100px;
+	width: 100%;
+}
+#banner {
+	color:#FFF;
+	font-size:50px;
+	text-align:center;
+	padding:20px;
+}
+div.xoa
+{
+	clear:both;
+}
+div#box-chucnang
+{
+	width:auto;
+	height:50px;
+	background-color:#CCC;
+	padding:15px;
+	border:1px solid #CCC;
+	text-align:center;
+	margin-top:5px;
+}
+div#box-chucnang:hover
+{
+	border:1px solid #F00;
+}
+div#menu a
+{
+	text-decoration:none;
+	color:#09C;
+}
+div#menu a:hover
+{
+	color:#F0F;
+}
+div.left, div.right_sx, div.left_sx
+{
+	width: 48%;
+	float:left;
+	margin:10px;
+}
+div.right_sx
+{
+	float:right;
+}

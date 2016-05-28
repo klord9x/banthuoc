@@ -1,0 +1,54 @@
+ul li
+{
+	list-style:none;
+	color:#000;
+}
+a:hover
+{
+	color:#C0F;
+}
+.Tieude_Hotro
+{
+	height:30px;
+	background:#30F;
+	text-transform:uppercase;
+	padding:5px 0px 0px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	box-shadow:0px 0px 5px;
+	overflow:hidden;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	color:#FFF;		
+}
+
+.Hotro
+{
+	margin:5px 0px 0px 0px;
+	height:auto;
+	border-radius:5px;
+	border:1px solid #98FEEF;
+	overflow:hidden;
+	
+}
+.Hotro ul li
+{
+	padding:4px 8px;
+	background:#FFC;
+	border-top:1px solid #CCF;
+	list-style:none;
+
+}
+.Hotro ul li:hover
+{
+	background:#9F6;
+}
+.sdt
+{
+	float:right;
+}
+.imght
+{
+	text-align:center;
+}

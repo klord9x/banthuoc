@@ -1,0 +1,81 @@
+
+
+*
+{
+    margin:0;
+	padding:0;
+}
+
+body
+{
+	background:#CCC;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.wrapper
+{
+	width:1024px;
+	height:auto;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid #98FEEF;
+	box-shadow:20x 20px 20px #000000;
+	background: white;
+}
+.header
+{
+	width:100%;
+	height:auto;
+}
+.content
+{
+	width:100%;
+	height:auto;
+	border:1px solid #98FEEF;
+	float:left;
+}
+.menu_left
+{
+	margin:5px;
+	float:left;
+	width:200px;
+	height:auto;
+	overflow:hidden;
+}
+.flash
+{ 
+	margin:5px;
+	float:right;
+	width:800px;
+	height:170px;
+	border:1px solid #98FEEF;
+}
+.main_content
+{
+	float:right;
+	width:800px;
+	height:auto;
+	border:1px solid #98FEEF;
+	margin:5px;
+	border-radius:5px;
+	overflow:auto;
+}
+div.login
+{
+	margin:50px;
+	text-align:center;
+	margin-left:200px;
+	padding:5px;
+}
+div.reg
+{
+	margin:50px;
+	text-align:center;
+	margin-left:150px;
+}
+div.gioithieu
+{
+	width:auto;
+	height:auto;
+	overflow:auto;
+}

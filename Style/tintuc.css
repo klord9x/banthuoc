@@ -1,0 +1,25 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+.main
+{
+	width:800px;
+	height:auto;
+	overflow:hidden;
+}
+.tieude
+{
+	width:100%;
+	height:25px;
+	//border-bottom:1px solid #999;
+	margin:5px 5px 5px 5px;
+}
+.noidung
+{
+	width:750px;
+	float:left;
+	//border-bottom:1px solid #999;
+	margin:5px 5px 5px 5px;
+}
