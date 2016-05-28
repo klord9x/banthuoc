@@ -25,7 +25,7 @@
         <li><font color="#0099FF"><?php echo $dsp['Tensanpham'];?></font></li>
         <li><font color="#CC0000">Giá</font>: <?php echo number_format( $dsp['Gia']);?> VNĐ</li>
         <li><img src="images/cart_1.jpg" width="20" height="17" /><a href="addcart.php?item=<?php echo $dsp['idsanpham']; ?>">Đặt hàng</a></li>
-        <li><img src="images/Chart.png" width="20" height="17" /><a href="#">  Bình chọn sản phẩm</a></li>
+      
  
         </ul>
     </div>

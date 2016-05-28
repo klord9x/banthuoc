@@ -1,4 +1,5 @@
-﻿<?
+﻿<?php
+// die('delcart');
 if(!isset($_SESSION))
 {
 session_start();
@@ -15,4 +16,3 @@ unset($_SESSION['cart'][$id]);
 }
 header("location:cart.php");
 exit();
-?>
